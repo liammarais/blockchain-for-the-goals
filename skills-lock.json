@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "just-scrape": {
+      "source": "scrapegraphai/just-scrape",
+      "sourceType": "github",
+      "skillPath": "skills/just-scrape/SKILL.md",
+      "computedHash": "d02a55a5fbe3682e969202fbfcee475e05b8efb5e4aa6552b969dd3e0e83172a"
+    }
+  }
+}
