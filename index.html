@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Nature Summit · 81st United Nations General Assembly · 2026</title>
+  <meta name="description" content="An invitation-only leadership luncheon at the 81st United Nations General Assembly, convening leaders from government, finance, philanthropy, business, and civil society to build the future of the nature-based economy. New York City, September 24, 2026." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Nature Summit · 81st UN General Assembly" />
+  <meta property="og:description" content="Building the Future of the Nature-Based Economy. An invitation-only leadership luncheon at the United Nations, New York City, September 24, 2026." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              950: '#06241A',
+              900: '#0B3D2E',
+              800: '#114C39',
+              700: '#176149',
+              600: '#1E7556',
+            },
+            gold: {
+              500: '#C8A862',
+              600: '#B8924A',
+              700: '#9A7838',
+            },
+            ivory: {
+              50: '#FBF9F3',
+              100: '#F5F1E6',
+              200: '#ECE6D6',
+            },
+            ink: '#16241D',
+            muted: '#4D5C53',
+          },
+          fontFamily: {
+            display: ['Cormorant', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: {
+            content: '72rem',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family: 'Montserrat', system-ui, sans-serif; }
+    .font-display { font-family: 'Cormorant', Georgia, serif; }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    /* Subtle reveal animation */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    }
+    /* Form field base */
+    .field {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #D8D2C2;
+      border-radius: 0.5rem;
+      padding: 0.75rem 0.9rem;
+      font-size: 0.95rem;
+      color: #16241D;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .field::placeholder { color: #97A199; }
+    .field:focus {
+      outline: none;
+      border-color: #176149;
+      box-shadow: 0 0 0 3px rgba(23,97,73,0.18);
+    }
+    select.field { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23176149' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.75rem center; padding-right: 2.5rem; }
+    .field-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; color: #2E3D34; margin-bottom: 0.35rem; display: block; }
+  </style>
+</head>
+
+<body class="bg-ivory-50 text-ink antialiased">
+
+  <!-- Skip link -->
+  <a href="#request" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-forest-900 focus:text-ivory-50 focus:px-4 focus:py-2 focus:rounded">Skip to invitation request</a>
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-40 transition-all duration-300">
+    <div class="mx-auto max-w-content px-5 sm:px-8">
+      <nav class="mt-3 flex items-center justify-between rounded-full border border-forest-900/10 bg-ivory-50/85 px-5 py-3 backdrop-blur-md shadow-[0_8px_30px_rgba(11,61,46,0.06)]">
+        <a href="#top" class="flex items-center gap-3" aria-label="The Nature Summit home">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 4 5 6.5 5 11a5 5 0 0 1-10 0c0-4.5 3.5-7 5-11Z"/><path d="M12 22v-7"/></svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block font-display text-lg font-semibold tracking-wide text-forest-900">The Nature Summit</span>
+            <span class="block eyebrow text-[0.6rem] text-muted">UN General Assembly · 2026</span>
+          </span>
+        </a>
+        <div class="hidden items-center gap-8 lg:flex">
+          <a href="#journey" class="text-sm font-medium text-muted transition-colors hover:text-forest-900">The Journey</a>
+          <a href="#opportunity" class="text-sm font-medium text-muted transition-colors hover:text-forest-900">The Opportunity</a>
+          <a href="#summit" class="text-sm font-medium text-muted transition-colors hover:text-forest-900">The Summit</a>
+          <a href="#why" class="text-sm font-medium text-muted transition-colors hover:text-forest-900">Why UNGA</a>
+        </div>
+        <a href="#request" class="cursor-pointer rounded-full bg-forest-900 px-5 py-2.5 text-sm font-semibold text-ivory-50 transition-colors hover:bg-forest-800">
+          Request Invitation
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative overflow-hidden bg-forest-950 pt-28 pb-20 sm:pt-36 lg:pb-28">
+    <!-- ambient background -->
+    <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-forest-700/40 blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/4 h-80 w-80 rounded-full bg-gold-600/10 blur-3xl"></div>
+      <div class="absolute inset-0 opacity-[0.04]" style="background-image:radial-gradient(circle at 1px 1px, #E8E2D2 1px, transparent 0); background-size:28px 28px;"></div>
+    </div>
+
+    <div class="relative mx-auto grid max-w-content items-center gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <!-- Left: content -->
+      <div class="text-ivory-50">
+        <p class="eyebrow mb-5 inline-flex items-center gap-2 rounded-full border border-gold-500/40 px-4 py-1.5 text-gold-500">
+          <span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>
+          At the United Nations General Assembly
+        </p>
+        <h1 class="font-display text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+          The 2026<br />Nature Summit
+        </h1>
+        <p class="mt-6 max-w-xl font-display text-2xl font-normal italic text-ivory-100/90 sm:text-3xl">
+          Building the Future of the Nature-Based Economy
+        </p>
+
+        <!-- Event meta -->
+        <dl class="mt-9 grid max-w-xl gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div class="flex items-start gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <dt class="eyebrow text-[0.62rem] text-gold-500/80">Venue</dt>
+              <dd class="text-sm text-ivory-100">United Nations Headquarters<br />New York City</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <div>
+              <dt class="eyebrow text-[0.62rem] text-gold-500/80">Date &amp; Time</dt>
+              <dd class="text-sm text-ivory-100">Thursday, September 24, 2026<br />1:00 PM – 3:00 PM</dd>
+            </div>
+          </div>
+        </dl>
+
+        <!-- Chair -->
+        <div class="mt-8 flex items-center gap-4 rounded-2xl border border-ivory-50/10 bg-ivory-50/[0.04] p-4 sm:max-w-xl">
+          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold-500/15 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 18 2.5-5 3 2 4-8 3 6 2.5-3L20 18"/><path d="M2 21h20"/></svg>
+          </span>
+          <p class="text-sm leading-relaxed text-ivory-100">
+            <span class="block eyebrow text-[0.6rem] text-gold-500/80">Chaired by</span>
+            <span class="font-medium">Hon. Prime Minister Lord Fatafehi Fakafānua</span><br />
+            <span class="text-ivory-100/70">Kingdom of Tonga</span>
+          </p>
+        </div>
+
+        <p class="mt-7 max-w-lg text-sm leading-relaxed text-ivory-100/75">
+          An invitation-only leadership luncheon convening government, finance, philanthropy, business, and civil society to advance partnerships that strengthen resilience, unlock opportunity, and build a more prosperous future.
+        </p>
+      </div>
+
+      <!-- Right: invitation form card -->
+      <div class="reveal lg:justify-self-end">
+        <div class="w-full rounded-3xl border border-ivory-200/60 bg-ivory-50 p-6 shadow-2xl shadow-forest-950/40 sm:p-8">
+          <div class="mb-5">
+            <p class="eyebrow text-gold-700">Limited Capacity</p>
+            <h2 class="mt-1 font-display text-3xl font-semibold text-forest-900">Request an Invitation</h2>
+            <p class="mt-2 text-sm text-muted">Attendance requests are reviewed by the convening committee.</p>
+          </div>
+          <form class="invitation-form grid gap-4" data-endpoint="" novalidate>
+            <div>
+              <label class="field-label" for="h-name">Full Name</label>
+              <input class="field" id="h-name" name="fullName" type="text" autocomplete="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="field-label" for="h-title">Title / Role</label>
+                <input class="field" id="h-title" name="title" type="text" autocomplete="organization-title" placeholder="Minister, CEO, Partner…" required />
+              </div>
+              <div>
+                <label class="field-label" for="h-org">Organization</label>
+                <input class="field" id="h-org" name="organization" type="text" autocomplete="organization" placeholder="Organization" required />
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="h-email">Email</label>
+              <input class="field" id="h-email" name="email" type="email" autocomplete="email" placeholder="you@organization.org" required />
+            </div>
+            <div>
+              <label class="field-label" for="h-sector">Sector</label>
+              <select class="field" id="h-sector" name="sector" required>
+                <option value="" disabled selected>Select your sector…</option>
+                <option>Government</option>
+                <option>Investor</option>
+                <option>Family Office</option>
+                <option>Philanthropy</option>
+                <option>Corporate</option>
+                <option>Multilateral Institution</option>
+                <option>Innovator</option>
+              </select>
+            </div>
+            <button type="submit" class="form-submit mt-1 inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gold-600 px-6 py-3.5 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-600 focus:ring-offset-2 focus:ring-offset-ivory-50">
+              <span class="label">Request Invitation</span>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note text-center text-xs text-muted">By requesting, you agree to be contacted by the convening committee.</p>
+            <p class="form-success hidden rounded-xl border border-forest-600/30 bg-forest-600/5 p-4 text-center text-sm font-medium text-forest-800" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="border-y border-ivory-200 bg-ivory-100">
+    <div class="mx-auto max-w-content px-5 py-7 sm:px-8">
+      <p class="text-center eyebrow mb-5 text-muted">Convened alongside the world's leading nature &amp; climate processes</p>
+      <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center font-display text-lg font-semibold text-forest-900/70 sm:gap-x-12 sm:text-xl">
+        <li>UNFCCC</li>
+        <li aria-hidden="true" class="text-gold-600">·</li>
+        <li>CBD</li>
+        <li aria-hidden="true" class="text-gold-600">·</li>
+        <li>UNCCD</li>
+        <li aria-hidden="true" class="text-gold-600">·</li>
+        <li>EarthX</li>
+        <li aria-hidden="true" class="text-gold-600">·</li>
+        <li>UN General Assembly</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ THE JOURNEY ============ -->
+  <section id="journey" class="mx-auto max-w-content px-5 py-20 sm:px-8 lg:py-28">
+    <div class="reveal mx-auto max-w-3xl text-center">
+      <p class="eyebrow text-gold-700">The Journey</p>
+      <h2 class="mt-3 font-display text-4xl font-semibold leading-tight text-forest-900 sm:text-5xl">Building a Global Platform for the Nature-Based Economy</h2>
+      <p class="mt-5 text-base leading-relaxed text-muted">
+        Since its launch in 2025, the Nature Summit Series has evolved into a growing global platform that convenes leaders at the intersection of climate, biodiversity, land, oceans, finance, technology, and sustainable development — unlocking the value of nature for people, planet, and prosperity.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <ol class="relative mx-auto mt-16 max-w-3xl">
+      <span class="absolute left-[1.05rem] top-2 bottom-2 w-px bg-gradient-to-b from-gold-500/60 via-forest-600/40 to-transparent sm:left-1/2" aria-hidden="true"></span>
+
+      <li class="reveal relative mb-10 sm:grid sm:grid-cols-2 sm:gap-10">
+        <div class="sm:text-right sm:pr-12">
+          <div class="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-gold-500/50 bg-ivory-50 sm:left-1/2 sm:-translate-x-1/2">
+            <span class="h-2.5 w-2.5 rounded-full bg-gold-600"></span>
+          </div>
+          <div class="ml-14 sm:ml-0">
+            <span class="eyebrow text-gold-700">2025 · UNFCCC</span>
+            <h3 class="mt-1 font-display text-2xl font-semibold text-forest-900">Nature Summit for Climate</h3>
+            <p class="text-sm font-medium text-forest-700">Panama City · Alongside UNFCCC Global Climate Week</p>
+          </div>
+        </div>
+        <p class="ml-14 mt-2 text-sm leading-relaxed text-muted sm:ml-0 sm:mt-1 sm:pl-12">
+          The inaugural Nature Summit convened leaders from government, finance, philanthropy, business, and civil society to explore how the nature-based economy can accelerate climate resilience, sustainable development, and economic opportunity.
+        </p>
+      </li>
+
+      <li class="reveal relative mb-10 sm:grid sm:grid-cols-2 sm:gap-10">
+        <div class="sm:col-start-2 sm:pl-12">
+          <div class="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-gold-500/50 bg-ivory-50 sm:left-1/2 sm:-translate-x-1/2">
+            <span class="h-2.5 w-2.5 rounded-full bg-gold-600"></span>
+          </div>
+          <div class="ml-14 sm:ml-0">
+            <span class="eyebrow text-gold-700">2025 · CBD</span>
+            <h3 class="mt-1 font-display text-2xl font-semibold text-forest-900">Nature Summit for Biodiversity</h3>
+            <p class="text-sm font-medium text-forest-700">Alongside the Convention on Biological Diversity</p>
+          </div>
+        </div>
+        <p class="ml-14 mt-2 text-sm leading-relaxed text-muted sm:ml-0 sm:mt-1 sm:col-start-1 sm:row-start-1 sm:pr-12 sm:text-right">
+          Building on the momentum of the inaugural summit, leaders gathered to explore how biodiversity can be recognized, valued, and integrated into strategies for investment, conservation, and long-term prosperity.
+        </p>
+      </li>
+
+      <li class="reveal relative mb-10 sm:grid sm:grid-cols-2 sm:gap-10">
+        <div class="sm:text-right sm:pr-12">
+          <div class="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-gold-500/50 bg-ivory-50 sm:left-1/2 sm:-translate-x-1/2">
+            <span class="h-2.5 w-2.5 rounded-full bg-gold-600"></span>
+          </div>
+          <div class="ml-14 sm:ml-0">
+            <span class="eyebrow text-gold-700">2025 · UNCCD</span>
+            <h3 class="mt-1 font-display text-2xl font-semibold text-forest-900">Nature Summit for Land</h3>
+            <p class="text-sm font-medium text-forest-700">Alongside the UN Convention to Combat Desertification</p>
+          </div>
+        </div>
+        <p class="ml-14 mt-2 text-sm leading-relaxed text-muted sm:ml-0 sm:mt-1 sm:pl-12">
+          The third chapter focused on land restoration, food security, resilience, and sustainable development — bringing together leaders committed to advancing practical solutions for communities and ecosystems worldwide.
+        </p>
+      </li>
+
+      <li class="reveal relative mb-10 sm:grid sm:grid-cols-2 sm:gap-10">
+        <div class="sm:col-start-2 sm:pl-12">
+          <div class="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-gold-500/50 bg-ivory-50 sm:left-1/2 sm:-translate-x-1/2">
+            <span class="h-2.5 w-2.5 rounded-full bg-gold-600"></span>
+          </div>
+          <div class="ml-14 sm:ml-0">
+            <span class="eyebrow text-gold-700">2026 · EarthX</span>
+            <h3 class="mt-1 font-display text-2xl font-semibold text-forest-900">Nature Summit at EarthX</h3>
+            <p class="text-sm font-medium text-forest-700">Dallas, Texas · Earth Day</p>
+          </div>
+        </div>
+        <p class="ml-14 mt-2 text-sm leading-relaxed text-muted sm:ml-0 sm:mt-1 sm:col-start-1 sm:row-start-1 sm:pr-12 sm:text-right">
+          The Nature Summit expanded beyond multilateral negotiations, engaging investors, innovators, government leaders, entrepreneurs, and philanthropists around emerging opportunities within the nature-based economy.
+        </p>
+      </li>
+
+      <!-- Highlighted next chapter -->
+      <li class="reveal relative sm:grid sm:grid-cols-2 sm:gap-10">
+        <div class="sm:text-right sm:pr-12">
+          <div class="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border-2 border-gold-500 bg-forest-900 sm:left-1/2 sm:-translate-x-1/2">
+            <span class="h-2.5 w-2.5 rounded-full bg-gold-500"></span>
+          </div>
+          <div class="ml-14 sm:ml-0">
+            <span class="eyebrow text-gold-700">2026 · UN General Assembly</span>
+            <h3 class="mt-1 font-display text-2xl font-semibold text-forest-900">Nature Summit at the UN</h3>
+            <p class="text-sm font-medium text-forest-700">United Nations Headquarters · New York City</p>
+          </div>
+        </div>
+        <div class="ml-14 mt-2 rounded-2xl border border-gold-500/30 bg-ivory-100 p-5 sm:ml-0 sm:mt-1 sm:pl-5">
+          <p class="font-display text-xl font-semibold italic text-forest-900">The next chapter.</p>
+          <p class="mt-2 text-sm leading-relaxed text-muted">
+            Convening leaders from across government, capital, industry, philanthropy, and multilateral institutions during the 81st UN General Assembly to strengthen relationships, align priorities, and accelerate partnerships capable of shaping the future of the nature-based economy.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ THE OPPORTUNITY ============ -->
+  <section id="opportunity" class="relative overflow-hidden bg-forest-950 py-20 text-ivory-50 lg:py-28">
+    <div class="pointer-events-none absolute inset-0 opacity-[0.05]" aria-hidden="true" style="background-image:radial-gradient(circle at 1px 1px, #E8E2D2 1px, transparent 0); background-size:30px 30px;"></div>
+    <div class="relative mx-auto max-w-content px-5 sm:px-8">
+      <div class="reveal mx-auto max-w-4xl text-center">
+        <p class="eyebrow text-gold-500">The Opportunity</p>
+        <blockquote class="mt-5 font-display text-4xl font-medium leading-[1.1] sm:text-5xl lg:text-6xl">
+          “Nature is the greatest economic opportunity of the&nbsp;21st&nbsp;century.”
+        </blockquote>
+      </div>
+
+      <div class="reveal mx-auto mt-14 grid max-w-5xl gap-10 lg:grid-cols-2">
+        <div class="space-y-4 text-sm leading-relaxed text-ivory-100/85">
+          <p>For generations, economic growth has largely been built upon the extraction of nature. The emerging nature-based economy offers a different path — one that recognizes the immense value generated by healthy oceans, thriving forests, productive landscapes, and resilient ecosystems.</p>
+          <p>These living systems regulate climate, support global commerce, strengthen food and water security, reduce disaster risk, and sustain billions of livelihoods around the world.</p>
+          <p class="font-display text-2xl font-medium italic text-gold-500">They are not simply environmental assets. They are economic assets.</p>
+        </div>
+        <div class="space-y-4 text-sm leading-relaxed text-ivory-100/85">
+          <p>A new generation of leaders is working to make nature visible within markets, policy frameworks, investment strategies, and development models.</p>
+          <p>By aligning capital, innovation, technology, and governance around the value of living systems, governments and investors have an unprecedented opportunity to unlock sustainable growth, strengthen resilience, and create prosperity — particularly for nations and communities on the frontlines of climate change, biodiversity loss, and environmental degradation.</p>
+          <p class="font-medium text-ivory-50">The Nature Summit exists to help accelerate that transition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO WILL BE IN THE ROOM ============ -->
+  <section class="mx-auto max-w-content px-5 py-20 sm:px-8 lg:py-24">
+    <div class="reveal text-center">
+      <p class="eyebrow text-gold-700">Who Will Be in the Room</p>
+      <h2 class="mt-3 font-display text-4xl font-semibold text-forest-900 sm:text-5xl">A Convening of Decision-Makers</h2>
+    </div>
+    <div class="reveal mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="group rounded-2xl border border-ivory-200 bg-ivory-50 p-6 text-center transition-colors hover:border-gold-500/50">
+        <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-forest-900/5 text-forest-800 transition-colors group-hover:bg-forest-900 group-hover:text-gold-500" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>
+        </span>
+        <p class="mt-4 eyebrow text-[0.66rem] text-forest-900">Government</p>
+      </div>
+      <div class="group rounded-2xl border border-ivory-200 bg-ivory-50 p-6 text-center transition-colors hover:border-gold-500/50">
+        <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-forest-900/5 text-forest-800 transition-colors group-hover:bg-forest-900 group-hover:text-gold-500" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8m4 13V8m4 13V8m4 13V8M4 8h16L12 3 4 8Z"/></svg>
+        </span>
+        <p class="mt-4 eyebrow text-[0.66rem] text-forest-900">Capital</p>
+      </div>
+      <div class="group rounded-2xl border border-ivory-200 bg-ivory-50 p-6 text-center transition-colors hover:border-gold-500/50">
+        <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-forest-900/5 text-forest-800 transition-colors group-hover:bg-forest-900 group-hover:text-gold-500" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V8h4v12M14 20V4h4v16M10 20v-6"/></svg>
+        </span>
+        <p class="mt-4 eyebrow text-[0.66rem] text-forest-900">Industry</p>
+      </div>
+      <div class="group rounded-2xl border border-ivory-200 bg-ivory-50 p-6 text-center transition-colors hover:border-gold-500/50">
+        <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-forest-900/5 text-forest-800 transition-colors group-hover:bg-forest-900 group-hover:text-gold-500" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg>
+        </span>
+        <p class="mt-4 eyebrow text-[0.66rem] text-forest-900">Innovation</p>
+      </div>
+      <div class="group rounded-2xl border border-ivory-200 bg-ivory-50 p-6 text-center transition-colors hover:border-gold-500/50">
+        <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-forest-900/5 text-forest-800 transition-colors group-hover:bg-forest-900 group-hover:text-gold-500" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+        </span>
+        <p class="mt-4 eyebrow text-[0.66rem] text-forest-900">Multilateral</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT HAPPENS ============ -->
+  <section id="summit" class="bg-ivory-100 py-20 lg:py-28">
+    <div class="mx-auto max-w-content px-5 sm:px-8">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow text-gold-700">What Happens at the Nature Summit</p>
+        <h2 class="mt-3 font-display text-4xl font-semibold text-forest-900 sm:text-5xl">Where Relationships Become Partnerships</h2>
+      </div>
+      <div class="reveal mt-14 grid gap-6 sm:grid-cols-2">
+        <article class="rounded-2xl border border-ivory-200 bg-ivory-50 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg>
+          </span>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-forest-900">Build Relationships</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Connect with senior decision-makers from government, finance, philanthropy, business, and multilateral institutions.</p>
+        </article>
+        <article class="rounded-2xl border border-ivory-200 bg-ivory-50 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
+          </span>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-forest-900">Explore Opportunities</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Identify emerging pathways for investment, innovation, and collaboration across the nature-based economy.</p>
+        </article>
+        <article class="rounded-2xl border border-ivory-200 bg-ivory-50 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </span>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-forest-900">Share Insights</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Learn from leaders advancing solutions across climate, biodiversity, land, oceans, sustainable development, and natural capital.</p>
+        </article>
+        <article class="rounded-2xl border border-ivory-200 bg-ivory-50 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 8v6M4.9 4.9l4.2 4.2m5.8 5.8 4.2 4.2M2 12h6m8 0h6M4.9 19.1l4.2-4.2m5.8-5.8 4.2-4.2"/></svg>
+          </span>
+          <h3 class="mt-5 font-display text-2xl font-semibold text-forest-900">Catalyze Partnerships</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Develop relationships capable of mobilizing capital, accelerating implementation, and delivering measurable impact.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GROWING ECOSYSTEM ============ -->
+  <section class="mx-auto max-w-content px-5 py-20 sm:px-8 lg:py-24">
+    <div class="reveal mx-auto max-w-3xl text-center">
+      <p class="eyebrow text-gold-700">A Growing Global Ecosystem</p>
+      <h2 class="mt-3 font-display text-4xl font-semibold leading-tight text-forest-900 sm:text-5xl">More Than a Series of Events</h2>
+      <p class="mt-6 text-base leading-relaxed text-muted">
+        It is a growing ecosystem of leaders committed to advancing a future where resilience, prosperity, and environmental stewardship reinforce one another. Across climate, biodiversity, land, oceans, finance, technology, and sustainable development, the Nature Summit brings together leaders who share a common belief: that the future will belong to those who recognize, value, and invest in nature.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-3 font-display text-2xl font-semibold text-forest-900 sm:text-3xl">
+        <span>Panama</span>
+        <svg class="h-4 w-4 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <span>Dallas</span>
+        <svg class="h-4 w-4 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <span>New York</span>
+        <span class="text-gold-600">·</span>
+        <span class="italic text-muted">and beyond</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY UNGA ============ -->
+  <section id="why" class="bg-ivory-100 py-20 lg:py-28">
+    <div class="mx-auto grid max-w-content items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
+      <div class="reveal">
+        <p class="eyebrow text-gold-700">Why the UN General Assembly</p>
+        <h2 class="mt-3 font-display text-4xl font-semibold leading-tight text-forest-900 sm:text-5xl">The World's Most Influential Gathering</h2>
+        <div class="mt-6 space-y-4 text-sm leading-relaxed text-muted">
+          <p>Every year, the United Nations General Assembly convenes heads of state, ministers, ambassadors, investors, philanthropists, business leaders, and international institutions. The 2026 Nature Summit provides a unique platform within that moment for leaders focused on building the future of the nature-based economy.</p>
+          <p>As governments seek resilience, investors seek opportunity, businesses seek growth, and communities seek prosperity, the need for collaboration across sectors has never been greater. The Nature Summit creates a space for those conversations — and the partnerships that follow.</p>
+        </div>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4">
+        <div class="rounded-2xl border border-ivory-200 bg-ivory-50 p-6">
+          <p class="font-display text-4xl font-bold text-forest-900">81<span class="text-gold-600">st</span></p>
+          <p class="mt-1 text-xs text-muted">Session of the UN General Assembly</p>
+        </div>
+        <div class="rounded-2xl border border-ivory-200 bg-ivory-50 p-6">
+          <p class="font-display text-4xl font-bold text-forest-900">7+</p>
+          <p class="mt-1 text-xs text-muted">Sectors convened in one room</p>
+        </div>
+        <div class="rounded-2xl border border-ivory-200 bg-ivory-50 p-6">
+          <p class="font-display text-4xl font-bold text-forest-900">5</p>
+          <p class="mt-1 text-xs text-muted">Summit editions since 2025</p>
+        </div>
+        <div class="rounded-2xl border border-ivory-200 bg-ivory-50 p-6">
+          <p class="font-display text-4xl font-bold text-forest-900">120<span class="text-gold-600">m</span></p>
+          <p class="mt-1 text-xs text-muted">An intimate, invitation-only luncheon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REQUEST INVITATION (MAIN CONVERSION) ============ -->
+  <section id="request" class="relative overflow-hidden bg-forest-950 py-20 text-ivory-50 lg:py-28">
+    <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+      <div class="absolute -top-24 left-1/3 h-96 w-96 rounded-full bg-forest-700/40 blur-3xl"></div>
+      <div class="absolute -bottom-20 right-1/4 h-80 w-80 rounded-full bg-gold-600/10 blur-3xl"></div>
+    </div>
+    <div class="relative mx-auto grid max-w-content items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
+      <div class="reveal">
+        <p class="eyebrow text-gold-500">Request an Invitation</p>
+        <h2 class="mt-3 font-display text-4xl font-semibold leading-tight sm:text-5xl">Join Leaders Building the Future of the Nature-Based Economy</h2>
+        <p class="mt-5 text-sm leading-relaxed text-ivory-100/80">
+          Participation is limited and attendance requests are reviewed by the convening committee. The Nature Summit is designed for leaders committed to advancing practical solutions, strategic partnerships, and long-term investment in resilience and prosperity.
+        </p>
+        <ul class="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ivory-100/85">
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Government Leaders</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Investors</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Family Offices</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Philanthropists</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Corporate Executives</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Multilateral Institutions</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Innovators</li>
+        </ul>
+      </div>
+
+      <!-- Form card -->
+      <div class="reveal">
+        <div class="rounded-3xl border border-ivory-50/10 bg-ivory-50 p-6 shadow-2xl shadow-forest-950/50 sm:p-8">
+          <form class="invitation-form grid gap-4" data-endpoint="" novalidate>
+            <div>
+              <label class="field-label" for="r-name">Full Name</label>
+              <input class="field" id="r-name" name="fullName" type="text" autocomplete="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="field-label" for="r-title">Title / Role</label>
+                <input class="field" id="r-title" name="title" type="text" autocomplete="organization-title" placeholder="Minister, CEO, Partner…" required />
+              </div>
+              <div>
+                <label class="field-label" for="r-org">Organization</label>
+                <input class="field" id="r-org" name="organization" type="text" autocomplete="organization" placeholder="Organization" required />
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="r-email">Email</label>
+              <input class="field" id="r-email" name="email" type="email" autocomplete="email" placeholder="you@organization.org" required />
+            </div>
+            <div>
+              <label class="field-label" for="r-sector">Sector</label>
+              <select class="field" id="r-sector" name="sector" required>
+                <option value="" disabled selected>Select your sector…</option>
+                <option>Government</option>
+                <option>Investor</option>
+                <option>Family Office</option>
+                <option>Philanthropy</option>
+                <option>Corporate</option>
+                <option>Multilateral Institution</option>
+                <option>Innovator</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" for="r-note">Anything we should know? <span class="font-normal text-muted">(optional)</span></label>
+              <textarea class="field" id="r-note" name="note" rows="3" placeholder="Your areas of focus, delegation, or interest…"></textarea>
+            </div>
+            <button type="submit" class="form-submit mt-1 inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-gold-600 px-6 py-3.5 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-600 focus:ring-offset-2 focus:ring-offset-ivory-50">
+              <span class="label">Request Invitation</span>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note text-center text-xs text-muted">By requesting, you agree to be contacted by the convening committee.</p>
+            <p class="form-success hidden rounded-xl border border-forest-600/30 bg-forest-600/10 p-4 text-center text-sm font-medium text-forest-800" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-ivory-200 bg-ivory-50">
+    <div class="mx-auto max-w-content px-5 py-12 sm:px-8">
+      <div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+        <div class="flex items-center gap-3">
+          <span class="grid h-10 w-10 place-items-center rounded-full bg-forest-900 text-gold-500" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 4 5 6.5 5 11a5 5 0 0 1-10 0c0-4.5 3.5-7 5-11Z"/><path d="M12 22v-7"/></svg>
+          </span>
+          <div>
+            <p class="font-display text-xl font-semibold text-forest-900">The Nature Summit</p>
+            <p class="text-xs text-muted">81st United Nations General Assembly · New York City · 2026</p>
+          </div>
+        </div>
+        <a href="#request" class="cursor-pointer rounded-full bg-forest-900 px-6 py-3 text-sm font-semibold text-ivory-50 transition-colors hover:bg-forest-800">Request Invitation</a>
+      </div>
+      <div class="mt-10 border-t border-ivory-200 pt-6 text-center text-xs text-muted sm:flex sm:items-center sm:justify-between sm:text-left">
+        <p>© 2026 The Nature Summit Series. An invitation-only convening.</p>
+        <p class="mt-2 sm:mt-0">Building the value of nature for people, planet, and prosperity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script>
+    // Nav shadow on scroll
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('shadow-lg', window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Scroll reveal
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+    }
+
+    // Form handling: real endpoint if provided via data-endpoint, otherwise graceful client-side success
+    document.querySelectorAll('.invitation-form').forEach((form) => {
+      form.addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        if (!form.reportValidity()) return;
+
+        const btn = form.querySelector('.form-submit');
+        const label = btn.querySelector('.label');
+        const note = form.querySelector('.form-note');
+        const success = form.querySelector('.form-success');
+        const endpoint = form.dataset.endpoint;
+        const original = label.textContent;
+
+        btn.disabled = true;
+        btn.classList.add('opacity-70', 'cursor-wait');
+        label.textContent = 'Submitting…';
+
+        const data = Object.fromEntries(new FormData(form).entries());
+
+        try {
+          if (endpoint) {
+            const res = await fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+            if (!res.ok) throw new Error('Request failed');
+          } else {
+            // No backend configured yet — simulate acceptance so the UX is complete.
+            await new Promise((r) => setTimeout(r, 700));
+            console.info('Invitation request (no endpoint configured):', data);
+          }
+
+          form.querySelectorAll('.field').forEach((f) => { const w = f.closest('div'); if (w) w.style.display = 'none'; });
+          btn.style.display = 'none';
+          if (note) note.style.display = 'none';
+          success.textContent = 'Thank you, ' + (data.fullName ? data.fullName.split(' ')[0] : 'and welcome') + '. Your request has been received — the convening committee will be in touch.';
+          success.classList.remove('hidden');
+          success.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+        } catch (err) {
+          label.textContent = original;
+          btn.disabled = false;
+          btn.classList.remove('opacity-70', 'cursor-wait');
+          if (note) { note.textContent = 'Something went wrong. Please try again or email the committee directly.'; note.classList.add('text-red-600'); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
